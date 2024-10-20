@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData(callback) {
+setTimeout(function() {
+const data = 'Some information';
+callback(data);
+}, 2000); // Simulating a delay of 2 seconds
+}
+function processData(data) {
+console.log('Data received:', data);
+}
+fetchData(processData); // Pass processData as a callback function
+    </script>
+</body>
+</html>

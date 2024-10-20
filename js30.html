@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement</title>
+</head>
+<body>
+    <h1 id="demo">hiiiii</h1>
+
+    <script>
+        var a=document.getElementById("demo")
+        var b=document.createElement("p")
+        b.innerHTML="this is paragraph"
+        document.body.appendChild(b)
+        console.log(a)
+    </script>
+</body>
+</html>
